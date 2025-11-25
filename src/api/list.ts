@@ -1,13 +1,8 @@
 import { http } from "@/utils/index"
-
-// 1.定义泛型
-type ResType<T> = {
-  messgae: string,
-  data: T
-}
+import type { ResType } from "./common"
 
 // 2.定义具体的接口类型
-type ChannelItem = {
+export type ChannelItem = {
   id: number,
   name: string
 }
