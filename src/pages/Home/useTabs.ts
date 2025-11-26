@@ -12,10 +12,11 @@ function useTabs() {
         setChannels(res.data.data.channels)
       } catch (error) {
         throw new Error('fetch channel error')
+        console.log(error)
       }
     }
     getChannels()
-  })
+  }, [])
   return {
     channels
   }
